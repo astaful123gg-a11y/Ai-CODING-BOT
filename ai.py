@@ -12,9 +12,8 @@ from telegram.ext import (
 from openai import OpenAI
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-TELEGRAM_TOKEN  = os.environ.get("TELEGRAM_TOKEN", "8698628485:AAHjfEvEJIX1q15uxYNE7llJ-RwT2onMf9k")
-GITHUB_TOKEN    = os.environ.get("GITHUB_TOKEN", "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")
-
+TELEGRAM_TOKEN  = "8698628485:AAHjfEvEJIX1q15uxYNE7llJ-RwT2onMf9k"
+GITHUB_TOKEN    = "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""
 # GitHub Models endpoint
 client = OpenAI(
     base_url="https://models.inference.ai.azure.com",
