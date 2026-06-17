@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: devmate-ai-bot
+    env: python
+    pythonVersion: "3.11"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python ai.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+    healthCheckPath: /
